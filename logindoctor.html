@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+<body> 
+    <div class="form-box">
+        <h1>LOGIN</h1>
+        <div class="input-box"> <i class="fa fa-user icon"></i> <input class="input-field" type="text" placeholder="username" name="usrnm"> </div>
+    <div class="input-box"><i class="fa fa-envelope icon"></i><input class="input-field" type="text" placeholder="email_id" name="email"></div>
+    <div class="input-box"><i class="fa fa-key icon"></i><input class="input-field" type="password" placeholder="Password" name="psw" id="myInput">
+        <span class="eye" onclick="myfunction()">
+        <i id="hide0" class="fa fa-eye"></i>
+        <i id="hide1"class="fa fa-eye-slash"></i>
+            </span>
+</div>
+        <button type="button" class="button"><a href="doctordashboard.html">LOGIN</a></button>
+    </div>
+    <script>
+        function myfunction(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide0");
+            var z = document.getElementById("hide1");
+            
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+                    }
+        }
+    </script>
+    </body>
+</html>
+
+    
+   

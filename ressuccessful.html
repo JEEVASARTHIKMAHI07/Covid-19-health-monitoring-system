@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    REGISTER SUCCESSFUL</title>
+    <link rel="stylesheet" href="resgsuccessful.css">
+    </head>
+<body>
+    <h3>REGISTER SUCCESSFUL</h3>
+    <div class="check"> Pls check your EMAIL-ID<br>
+    the OTP is generate
+    <span id="otp"> </span>
+    </div>
+    
+    <div class="otp">
+        ENTER YOUR OTP<br>
+       <br> <input placeholder="           |         |          |  "><br>
+    </div>
+    <script>
+    function generate(){
+    
+        let num='1234567890';
+        let OTP='';
+        
+        for(let i=0;i<4;i++)
+        {
+            OTP += num[Math.floor(Math.random()*10)];
+            
+        }
+        document.getElementById('otp').innerhtml
+        
+    
+    
+    
+    </script>
+    </body>
+</html>
